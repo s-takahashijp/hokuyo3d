@@ -1,0 +1,11 @@
+ip: 192.168.0.10
+vertical_interlace: 2
+horizontal_interlace: 4
+port: 10940
+frame_id: yvt
+imu_frame_id: $(frame_id)_imu
+mag_frame_id: $(frame_id)_mag
+range_min: 0.0
+auto_reset: false
+allow_jump_back: false
+output_cycle: field

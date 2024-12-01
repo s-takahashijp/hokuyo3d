@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="basename" default="hokuyo3d"/>
+  <arg name="node" default="$(arg basename)"/>
+  <arg name="ip_address1" default="192.168.0.10" />
+  
+<!-- sensor1 -->
+  <!-- <node pkg="$(arg basename)" type="$(arg basename)" name="$(arg node)" required="true" output="screen" >
+    <rosparam file="$(find hokuyo3d)/config/yvt_param.yaml"/>
+  </node> -->
+
+<!-- rviz -->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find hokuyo3d)/rviz/hokuyo3d.rviz" required="true" output="screen" />
+
+</launch>
+

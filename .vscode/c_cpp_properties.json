@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/takahashi/catkin_ws/src/hokuyo3d/include/**",
+        "/home/takahashi/catkin_ws/src/hokuyo_lio/include/**",
+        "/home/takahashi/catkin_ws/src/ylm_ros/include/**",
+        "/home/takahashi/catkin_ws/src/yp-spur/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
