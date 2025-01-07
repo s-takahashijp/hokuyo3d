@@ -27,7 +27,7 @@ HokuyoImuToLivox::HokuyoImuToLivox()
 {
     _nhPrivate.param("target_frame", _target_frame, std::string("base_link"));
     _sub_pc = _nh.subscribe("/hokuyo3d3/imu", 10, &HokuyoImuToLivox::callbackPC, this);
-    _pub_pc = _nh.advertise<sensor_msgs::Imu>("/hokuyo3d/imu", 10);
+    _pub_pc = _nh.advertise<sensor_msgs::Imu>("/hokuyo3d3/imu_livox", 10);
     _dataCount = 0;
 }
 
